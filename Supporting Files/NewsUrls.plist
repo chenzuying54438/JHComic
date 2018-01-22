@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>path</key>
+		<string>social</string>
+		<key>title</key>
+		<string>社会</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>world</string>
+		<key>title</key>
+		<string>国际</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>tiyu</string>
+		<key>title</key>
+		<string>体育</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>keji</string>
+		<key>title</key>
+		<string>科技</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>military</string>
+		<key>title</key>
+		<string>军事</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>travel</string>
+		<key>title</key>
+		<string>旅游</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>meinv</string>
+		<key>title</key>
+		<string>美女</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>it</string>
+		<key>title</key>
+		<string>IT</string>
+	</dict>
+</array>
+</plist>

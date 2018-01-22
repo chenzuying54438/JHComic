@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ComicDetalViewController">
+            <connections>
+                <outlet property="areaLbl" destination="3fZ-BT-LnT" id="8f5-zU-nGa"/>
+                <outlet property="chapterDetailView" destination="ihM-FI-H5J" id="4R4-Zu-lsJ"/>
+                <outlet property="chapterHeightConstraint" destination="pKp-8U-4qb" id="ZMg-Ur-W0B"/>
+                <outlet property="chapterListView" destination="y50-8b-ayv" id="nll-fF-crO"/>
+                <outlet property="containerHeightConstraint" destination="X8S-a0-kJK" id="Ppb-3T-96A"/>
+                <outlet property="containerView" destination="LLZ-Z8-r7D" id="sLe-TC-aaG"/>
+                <outlet property="coverView" destination="tLL-P4-5xm" id="eSJ-cx-8wZ"/>
+                <outlet property="expandBtn" destination="Fpn-UM-m60" id="Lb9-73-vfP"/>
+                <outlet property="favoriteBtn" destination="J1e-MV-ug8" id="pPo-LI-oda"/>
+                <outlet property="headerDetailView" destination="kJx-1x-qMR" id="KLR-GH-0aQ"/>
+                <outlet property="headerLabel" destination="Raz-U8-gbn" id="gRa-fh-Okn"/>
+                <outlet property="lastupdateLbl" destination="V7I-p2-RVa" id="20k-WR-5ht"/>
+                <outlet property="readBtn" destination="ziN-N6-JNO" id="Fsr-aD-si8"/>
+                <outlet property="titleLbl" destination="gzg-Pt-Izw" id="4le-hN-bxX"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tih-FW-ZUS" userLabel="ScrollView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LLZ-Z8-r7D" userLabel="ContainerView">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="665.5"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kJx-1x-qMR" userLabel="headerDetailView">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="295"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X1F-Q7-aPQ">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="239"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tLL-P4-5xm" userLabel="coverView">
+                                                    <rect key="frame" x="8" y="13" width="136" height="206"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V7I-p2-RVa" userLabel="lastupdateLbl">
+                                                    <rect key="frame" x="160" y="87" width="116" height="42"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3fZ-BT-LnT" userLabel="areaLbl">
+                                                    <rect key="frame" x="160" y="137" width="129" height="39"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gzg-Pt-Izw" userLabel="titleLbl">
+                                                    <rect key="frame" x="160" y="36" width="129" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.99835751150643792" green="1" blue="0.93791538094778759" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </view>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ziN-N6-JNO" userLabel="readBtn">
+                                            <rect key="frame" x="0.0" y="247" width="195" height="48"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="阅读"/>
+                                            <connections>
+                                                <action selector="readClick:" destination="-1" eventType="touchUpInside" id="MXP-Yl-U3K"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J1e-MV-ug8" userLabel="favoriteBtn">
+                                            <rect key="frame" x="191" y="246" width="184" height="49"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="添加收藏"/>
+                                            <connections>
+                                                <action selector="favoriteClick:" destination="-1" eventType="touchUpInside" id="Dej-Ce-kkW"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="295" id="Ncr-uO-yyU"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ihM-FI-H5J" userLabel="chapterDetailView">
+                                    <rect key="frame" x="0.0" y="315" width="375" height="330.5"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="正篇" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Raz-U8-gbn">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y50-8b-ayv" userLabel="chapterListView">
+                                            <rect key="frame" x="0.0" y="20.5" width="375" height="280"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" priority="750" constant="280" id="pKp-8U-4qb"/>
+                                            </constraints>
+                                        </view>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fpn-UM-m60" userLabel="ExpandBtn">
+                                            <rect key="frame" x="0.0" y="300.5" width="375" height="30"/>
+                                            <state key="normal" title="阅读全部章节"/>
+                                            <connections>
+                                                <action selector="expandClick:" destination="-1" eventType="touchUpInside" id="2gw-0Y-JVM"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstItem="y50-8b-ayv" firstAttribute="top" secondItem="Raz-U8-gbn" secondAttribute="bottom" id="40E-UA-PT3"/>
+                                        <constraint firstItem="Raz-U8-gbn" firstAttribute="leading" secondItem="ihM-FI-H5J" secondAttribute="leading" id="At0-9C-vGT"/>
+                                        <constraint firstItem="Raz-U8-gbn" firstAttribute="top" secondItem="ihM-FI-H5J" secondAttribute="top" id="ElY-xo-aC9"/>
+                                        <constraint firstItem="Fpn-UM-m60" firstAttribute="top" secondItem="y50-8b-ayv" secondAttribute="bottom" id="IBN-kT-Z1c"/>
+                                        <constraint firstItem="Fpn-UM-m60" firstAttribute="leading" secondItem="ihM-FI-H5J" secondAttribute="leading" id="RZd-XX-7gZ"/>
+                                        <constraint firstAttribute="trailing" secondItem="Raz-U8-gbn" secondAttribute="trailing" id="Tur-gT-nGz"/>
+                                        <constraint firstAttribute="trailing" secondItem="Fpn-UM-m60" secondAttribute="trailing" id="cgX-Da-KN0"/>
+                                        <constraint firstAttribute="trailing" secondItem="y50-8b-ayv" secondAttribute="trailing" id="rcd-c3-QKg"/>
+                                        <constraint firstAttribute="bottom" secondItem="Fpn-UM-m60" secondAttribute="bottom" id="t82-LW-3f6"/>
+                                        <constraint firstItem="y50-8b-ayv" firstAttribute="leading" secondItem="ihM-FI-H5J" secondAttribute="leading" id="xbf-t7-7Mf"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="ihM-FI-H5J" secondAttribute="trailing" id="F8H-43-e0s"/>
+                                <constraint firstItem="kJx-1x-qMR" firstAttribute="leading" secondItem="LLZ-Z8-r7D" secondAttribute="leading" id="LGF-lg-c8y"/>
+                                <constraint firstAttribute="height" constant="665.5" id="X8S-a0-kJK"/>
+                                <constraint firstAttribute="bottom" secondItem="ihM-FI-H5J" secondAttribute="bottom" constant="20" id="Yfc-Pa-B9e"/>
+                                <constraint firstItem="ihM-FI-H5J" firstAttribute="top" secondItem="kJx-1x-qMR" secondAttribute="bottom" constant="20" id="pff-ru-i2P"/>
+                                <constraint firstItem="kJx-1x-qMR" firstAttribute="top" secondItem="LLZ-Z8-r7D" secondAttribute="top" id="qCw-5Y-gfX"/>
+                                <constraint firstAttribute="trailing" secondItem="kJx-1x-qMR" secondAttribute="trailing" id="vzz-RE-uCk"/>
+                                <constraint firstItem="ihM-FI-H5J" firstAttribute="leading" secondItem="LLZ-Z8-r7D" secondAttribute="leading" id="xfj-81-PtL"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="LLZ-Z8-r7D" secondAttribute="trailing" id="5im-zc-iDw"/>
+                        <constraint firstItem="LLZ-Z8-r7D" firstAttribute="top" secondItem="Tih-FW-ZUS" secondAttribute="top" id="Ab8-b8-cNM"/>
+                        <constraint firstAttribute="bottom" secondItem="LLZ-Z8-r7D" secondAttribute="bottom" id="Dze-fC-Rgu"/>
+                        <constraint firstItem="LLZ-Z8-r7D" firstAttribute="leading" secondItem="Tih-FW-ZUS" secondAttribute="leading" id="KKs-GO-5tp"/>
+                        <constraint firstItem="LLZ-Z8-r7D" firstAttribute="width" secondItem="Tih-FW-ZUS" secondAttribute="width" id="Q6Z-YS-7lC"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Tih-FW-ZUS" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="PPF-tG-U2k"/>
+                <constraint firstItem="Tih-FW-ZUS" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="XPH-Jn-9V7"/>
+                <constraint firstItem="Tih-FW-ZUS" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" id="aI5-2Q-MLR"/>
+                <constraint firstItem="Tih-FW-ZUS" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="jhm-cf-WM5"/>
+            </constraints>
+            <point key="canvasLocation" x="-741" y="-56"/>
+        </view>
+        <viewController id="rnD-SO-fzo">
+            <layoutGuides>
+                <viewControllerLayoutGuide type="top" id="gx6-30-RdD"/>
+                <viewControllerLayoutGuide type="bottom" id="aeA-QX-6zN"/>
+            </layoutGuides>
+            <view key="view" contentMode="scaleToFill" id="Iz3-Ln-mnp">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            </view>
+        </viewController>
+    </objects>
+</document>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="CategoryCell" id="nNO-gT-RlO" customClass="CategoryCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="167" height="227"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="167" height="227"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zRF-FP-aSI">
+                        <rect key="frame" x="0.0" y="0.0" width="173" height="173"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="zRF-FP-aSI" secondAttribute="height" multiplier="1:1" id="XAE-DG-FAE"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j5D-CV-bUK">
+                        <rect key="frame" x="0.0" y="173" width="167" height="54"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="j5D-CV-bUK" firstAttribute="top" secondItem="zRF-FP-aSI" secondAttribute="bottom" id="2rk-vM-eg3"/>
+                <constraint firstItem="j5D-CV-bUK" firstAttribute="leading" secondItem="nNO-gT-RlO" secondAttribute="leading" id="9hB-zl-Wxa"/>
+                <constraint firstAttribute="trailing" secondItem="j5D-CV-bUK" secondAttribute="trailing" id="WXB-lY-aFX"/>
+                <constraint firstItem="zRF-FP-aSI" firstAttribute="top" secondItem="nNO-gT-RlO" secondAttribute="top" id="e9L-YT-Rcr"/>
+                <constraint firstAttribute="trailing" secondItem="zRF-FP-aSI" secondAttribute="trailing" constant="-6" id="nch-Pp-hs1"/>
+                <constraint firstItem="zRF-FP-aSI" firstAttribute="leading" secondItem="nNO-gT-RlO" secondAttribute="leading" id="vaN-3l-udz"/>
+                <constraint firstAttribute="bottom" secondItem="j5D-CV-bUK" secondAttribute="bottom" id="vfV-LQ-SHe"/>
+            </constraints>
+            <size key="customSize" width="167" height="227"/>
+            <connections>
+                <outlet property="cateLabel" destination="j5D-CV-bUK" id="gyy-Vd-8It"/>
+                <outlet property="imgIcon" destination="zRF-FP-aSI" id="qlC-RV-FUp"/>
+            </connections>
+            <point key="canvasLocation" x="-30.5" y="61.5"/>
+        </collectionViewCell>
+    </objects>
+</document>
