@@ -11,11 +11,6 @@
 #import "MyTabBarViewController.h"
 #import "MyNavigationViewController.h"
 
-#import "NewsMainViewController.h"
-#import "NewsViewController.h"
-#import "LiveViewController.h"
-#import "TopicViewController.h"
-#import "MeViewController.h"
 #import "Utility.h"
 
 
@@ -32,11 +27,6 @@
     // Override point for customization after application launch.
     MyTabBarViewController *tabBarViewController = [[MyTabBarViewController alloc] init];
     
-    UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"NewsMainViewController" bundle:nil];
-    NewsMainViewController *mainController = [storyboard instantiateViewControllerWithIdentifier:@"NewsMainViewController"];
-    NewsViewController *newsController = [[NewsViewController alloc] initWithTitle:@"News"];
-    MyNavigationViewController *nav1 = [[MyNavigationViewController alloc] initWithRootViewController:mainController];
-
     UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
     flowLayout.scrollDirection = UICollectionViewScrollDirectionVertical;
     flowLayout.itemSize = CGSizeMake(105, 145);
@@ -45,15 +35,11 @@
     flowLayout.sectionInset = UIEdgeInsetsMake(10, 10, 10, 10);
     ComicMainCollectionViewController *comicVc = [[ComicMainCollectionViewController alloc] initWithCollectionViewLayout:flowLayout];
     comicVc.title = @"漫画";
-    MyNavigationViewController *nav2 = [[MyNavigationViewController alloc] initWithRootViewController:comicVc];
+    MyNavigationViewController *nav1 = [[MyNavigationViewController alloc] initWithRootViewController:comicVc];
     
-    TopicViewController *topicController = [[TopicViewController alloc] initWithTitle:@"Topic"];
-    MyNavigationViewController *nav3 = [[MyNavigationViewController alloc] initWithRootViewController:topicController];
+
     
-    MeViewController *meController = [[MeViewController alloc] initWithTitle:@"Me"];
-    MyNavigationViewController *nav4 = [[MyNavigationViewController alloc] initWithRootViewController:meController];
-    
-    NSArray *controllers = @[nav1, nav2, nav3, nav4];
+    NSArray *controllers = @[nav1];
     tabBarViewController.viewControllers = controllers;
     tabBarViewController.selectedIndex = 0;
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];

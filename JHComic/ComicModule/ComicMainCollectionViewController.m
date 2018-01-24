@@ -57,7 +57,7 @@ static NSString * const reuseIdentifier = @"Cell";
     //设置UISearchController的显示属性，以下3个属性默认为YES
     
     //搜索时，背景变模糊
-    self.searchController.obscuresBackgroundDuringPresentation = YES;
+    self.searchController.obscuresBackgroundDuringPresentation = NO;
     
     //点击搜索的时候,是否隐藏导航栏
     self.searchController.hidesNavigationBarDuringPresentation = NO;
@@ -78,14 +78,18 @@ static NSString * const reuseIdentifier = @"Cell";
 
 -(void)updateSearchResultsForSearchController:(UISearchController *)searchController
 {
+    __unsafe_unretained __typeof(self) weakSelf = self;
     [self.searchComicList removeAllObjects];
+    if(self.searchController.searchBar.text.length == 0)
+    {
+        [weakSelf.collectionView reloadData];
+        return;
+    }
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
     params[@"key"] = COMICKEY;
     params[@"name"] = self.searchController.searchBar.text;
-    __unsafe_unretained __typeof(self) weakSelf = self;
+    
     BOOL ret = [[ComicNetClient sharedClient] GET:@"comic/book" parameters:params progress:nil success:^(NSURLSessionDataTask * __unused task, id JSON) {
-        //       NSString *result = [[NSString alloc]initWithData:JSON encoding:NSUTF8StringEncoding];
-        //       NSLog(@"%@",result);
         NSDictionary *result = [JSON valueForKeyPath:@"result"];
         NSArray *bookList = result[@"bookList"];
         for (NSDictionary *book in bookList) {

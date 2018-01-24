@@ -13,6 +13,9 @@
 #import "MBProgressHUD.h"
 #import "ComicSetViewController.h"
 
+static NSString *toExpandString = @"阅读全部章节";
+static NSString *expandedString = @"收起";
+
 @interface ComicDetalViewController () {
     
 }
@@ -173,11 +176,15 @@
 
 - (IBAction)expandClick:(UIButton *)sender {
     self.expanded = !(self.expanded);
-    
+    if(self.expanded)
+        [self.expandBtn setTitle:expandedString forState:UIControlStateNormal];
+    else
+        [self.expandBtn setTitle:toExpandString forState:UIControlStateNormal];
     [self.view layoutIfNeeded];
     [UIView animateWithDuration:0.5 animations:^{
         // Make all constraint changes here
         [self updateChapterListView];
+
         [self.view layoutIfNeeded];
     }];
 }

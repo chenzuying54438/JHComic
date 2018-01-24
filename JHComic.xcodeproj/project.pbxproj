@@ -7,10 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		461B46811FDAB369006CC139 /* NewsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 461B467F1FDAB369006CC139 /* NewsDetailViewController.m */; };
-		461B46821FDAB369006CC139 /* NewsDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 461B46801FDAB369006CC139 /* NewsDetailViewController.xib */; };
-		461B46861FDBDCF0006CC139 /* NewsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 461B46841FDBDCF0006CC139 /* NewsTableViewCell.m */; };
-		461B46871FDBDCF0006CC139 /* NewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 461B46851FDBDCF0006CC139 /* NewsTableViewCell.xib */; };
 		461B46BF1FDCC499006CC139 /* ComicMainCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 461B46BE1FDCC499006CC139 /* ComicMainCollectionViewController.m */; };
 		461B46C21FDCF491006CC139 /* ComicMainFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 461B46C11FDCF491006CC139 /* ComicMainFlowLayout.m */; };
 		461B46C81FDCFB5A006CC139 /* ComicNetClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 461B46C71FDCFB5A006CC139 /* ComicNetClient.m */; };
@@ -23,15 +19,7 @@
 		464F09441FC96FAC005BC01B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 464F09431FC96FAC005BC01B /* main.m */; };
 		464F094C1FC972E6005BC01B /* MyTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 464F094B1FC972E6005BC01B /* MyTabBarViewController.m */; };
 		464F094F1FC973C5005BC01B /* MyNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 464F094E1FC973C5005BC01B /* MyNavigationViewController.m */; };
-		464F09531FC974D1005BC01B /* ContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 464F09521FC974D1005BC01B /* ContentViewController.m */; };
-		464F09561FC974EA005BC01B /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 464F09551FC974EA005BC01B /* NewsViewController.m */; };
-		464F09591FC97503005BC01B /* LiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 464F09581FC97503005BC01B /* LiveViewController.m */; };
-		464F095C1FC9752C005BC01B /* TopicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 464F095B1FC9752C005BC01B /* TopicViewController.m */; };
-		464F095F1FC9754E005BC01B /* MeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 464F095E1FC9754E005BC01B /* MeViewController.m */; };
 		464F09631FC97DB9005BC01B /* News.m in Sources */ = {isa = PBXBuildFile; fileRef = 464F09621FC97DB9005BC01B /* News.m */; };
-		464F0A201FD806E7005BC01B /* AFNetClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 464F0A1F1FD806E7005BC01B /* AFNetClient.m */; };
-		464F0A221FD95CE9005BC01B /* NewsMainViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 464F0A211FD95CE9005BC01B /* NewsMainViewController.storyboard */; };
-		464F0A251FD961C9005BC01B /* NewsMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 464F0A241FD961C9005BC01B /* NewsMainViewController.m */; };
 		464F0A281FD96B12005BC01B /* NewsUrls.plist in Resources */ = {isa = PBXBuildFile; fileRef = 464F0A271FD96B12005BC01B /* NewsUrls.plist */; };
 		46C8A84E1FE2993500E8E5E4 /* ComicCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 46C8A84C1FE2993500E8E5E4 /* ComicCollectionViewCell.m */; };
 		46C8A84F1FE2993500E8E5E4 /* ComicCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46C8A84D1FE2993500E8E5E4 /* ComicCollectionViewCell.xib */; };
@@ -49,12 +37,6 @@
 		027249381838BC14FDC7F151 /* Pods-Demo_Navigation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo_Navigation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Demo_Navigation/Pods-Demo_Navigation.debug.xcconfig"; sourceTree = "<group>"; };
 		461B467C1FD97308006CC139 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		461B467D1FD97445006CC139 /* Utility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
-		461B467E1FDAB369006CC139 /* NewsDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsDetailViewController.h; sourceTree = "<group>"; };
-		461B467F1FDAB369006CC139 /* NewsDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsDetailViewController.m; sourceTree = "<group>"; };
-		461B46801FDAB369006CC139 /* NewsDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsDetailViewController.xib; sourceTree = "<group>"; };
-		461B46831FDBDCF0006CC139 /* NewsTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsTableViewCell.h; sourceTree = "<group>"; };
-		461B46841FDBDCF0006CC139 /* NewsTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsTableViewCell.m; sourceTree = "<group>"; };
-		461B46851FDBDCF0006CC139 /* NewsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsTableViewCell.xib; sourceTree = "<group>"; };
 		461B46BD1FDCC499006CC139 /* ComicMainCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ComicMainCollectionViewController.h; sourceTree = "<group>"; };
 		461B46BE1FDCC499006CC139 /* ComicMainCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComicMainCollectionViewController.m; sourceTree = "<group>"; };
 		461B46C01FDCF491006CC139 /* ComicMainFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ComicMainFlowLayout.h; sourceTree = "<group>"; };
@@ -77,23 +59,8 @@
 		464F094B1FC972E6005BC01B /* MyTabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyTabBarViewController.m; sourceTree = "<group>"; };
 		464F094D1FC973C5005BC01B /* MyNavigationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyNavigationViewController.h; sourceTree = "<group>"; };
 		464F094E1FC973C5005BC01B /* MyNavigationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyNavigationViewController.m; sourceTree = "<group>"; };
-		464F09511FC974D1005BC01B /* ContentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContentViewController.h; sourceTree = "<group>"; };
-		464F09521FC974D1005BC01B /* ContentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContentViewController.m; sourceTree = "<group>"; };
-		464F09541FC974EA005BC01B /* NewsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsViewController.h; sourceTree = "<group>"; };
-		464F09551FC974EA005BC01B /* NewsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
-		464F09571FC97503005BC01B /* LiveViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LiveViewController.h; sourceTree = "<group>"; };
-		464F09581FC97503005BC01B /* LiveViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LiveViewController.m; sourceTree = "<group>"; };
-		464F095A1FC9752C005BC01B /* TopicViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TopicViewController.h; sourceTree = "<group>"; };
-		464F095B1FC9752C005BC01B /* TopicViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TopicViewController.m; sourceTree = "<group>"; };
-		464F095D1FC9754E005BC01B /* MeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MeViewController.h; sourceTree = "<group>"; };
-		464F095E1FC9754E005BC01B /* MeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeViewController.m; sourceTree = "<group>"; };
 		464F09611FC97DB9005BC01B /* News.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = News.h; sourceTree = "<group>"; };
 		464F09621FC97DB9005BC01B /* News.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = News.m; sourceTree = "<group>"; };
-		464F0A1E1FD806E7005BC01B /* AFNetClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFNetClient.h; sourceTree = "<group>"; };
-		464F0A1F1FD806E7005BC01B /* AFNetClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFNetClient.m; sourceTree = "<group>"; };
-		464F0A211FD95CE9005BC01B /* NewsMainViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewsMainViewController.storyboard; sourceTree = "<group>"; };
-		464F0A231FD961C9005BC01B /* NewsMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsMainViewController.h; sourceTree = "<group>"; };
-		464F0A241FD961C9005BC01B /* NewsMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsMainViewController.m; sourceTree = "<group>"; };
 		464F0A271FD96B12005BC01B /* NewsUrls.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = NewsUrls.plist; sourceTree = "<group>"; };
 		46C8A84B1FE2993400E8E5E4 /* ComicCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ComicCollectionViewCell.h; sourceTree = "<group>"; };
 		46C8A84C1FE2993500E8E5E4 /* ComicCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComicCollectionViewCell.m; sourceTree = "<group>"; };
@@ -201,7 +168,6 @@
 			children = (
 				461B46BA1FDCC1E5006CC139 /* ComicModule */,
 				464F09601FC97D9F005BC01B /* Data */,
-				464F09501FC97496005BC01B /* ContentViewControllers */,
 				464F09341FC96FAC005BC01B /* AppDelegate.h */,
 				464F09351FC96FAC005BC01B /* AppDelegate.m */,
 				464F09371FC96FAC005BC01B /* ViewController.h */,
@@ -216,33 +182,6 @@
 				461B467D1FD97445006CC139 /* Utility.h */,
 			);
 			path = JHComic;
-			sourceTree = "<group>";
-		};
-		464F09501FC97496005BC01B /* ContentViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				464F0A1D1FD80699005BC01B /* Network */,
-				464F09511FC974D1005BC01B /* ContentViewController.h */,
-				464F09521FC974D1005BC01B /* ContentViewController.m */,
-				464F09541FC974EA005BC01B /* NewsViewController.h */,
-				464F09551FC974EA005BC01B /* NewsViewController.m */,
-				464F09571FC97503005BC01B /* LiveViewController.h */,
-				464F09581FC97503005BC01B /* LiveViewController.m */,
-				464F095A1FC9752C005BC01B /* TopicViewController.h */,
-				464F095B1FC9752C005BC01B /* TopicViewController.m */,
-				464F095D1FC9754E005BC01B /* MeViewController.h */,
-				464F095E1FC9754E005BC01B /* MeViewController.m */,
-				464F0A211FD95CE9005BC01B /* NewsMainViewController.storyboard */,
-				464F0A231FD961C9005BC01B /* NewsMainViewController.h */,
-				464F0A241FD961C9005BC01B /* NewsMainViewController.m */,
-				461B467E1FDAB369006CC139 /* NewsDetailViewController.h */,
-				461B467F1FDAB369006CC139 /* NewsDetailViewController.m */,
-				461B46801FDAB369006CC139 /* NewsDetailViewController.xib */,
-				461B46831FDBDCF0006CC139 /* NewsTableViewCell.h */,
-				461B46841FDBDCF0006CC139 /* NewsTableViewCell.m */,
-				461B46851FDBDCF0006CC139 /* NewsTableViewCell.xib */,
-			);
-			name = ContentViewControllers;
 			sourceTree = "<group>";
 		};
 		464F09601FC97D9F005BC01B /* Data */ = {
@@ -260,15 +199,6 @@
 				626CD0FC85675AD71C9CDC0F /* libPods-Demo_Navigation.a */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		464F0A1D1FD80699005BC01B /* Network */ = {
-			isa = PBXGroup;
-			children = (
-				464F0A1E1FD806E7005BC01B /* AFNetClient.h */,
-				464F0A1F1FD806E7005BC01B /* AFNetClient.m */,
-			);
-			name = Network;
 			sourceTree = "<group>";
 		};
 		464F0A261FD96ACC005BC01B /* Supporting Files */ = {
@@ -355,11 +285,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				461B46821FDAB369006CC139 /* NewsDetailViewController.xib in Resources */,
 				46C8A86B1FE543AC00E8E5E4 /* ComicSetViewController.xib in Resources */,
 				464F0A281FD96B12005BC01B /* NewsUrls.plist in Resources */,
-				464F0A221FD95CE9005BC01B /* NewsMainViewController.storyboard in Resources */,
-				461B46871FDBDCF0006CC139 /* NewsTableViewCell.xib in Resources */,
 				461B46CD1FDD09A0006CC139 /* CategoryCollectionViewCell.xib in Resources */,
 				464F09411FC96FAC005BC01B /* LaunchScreen.storyboard in Resources */,
 				46C8A8631FE3DA2000E8E5E4 /* ComicDetalViewController.xib in Resources */,
@@ -379,7 +306,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Demo_Navigation/Pods-Demo_Navigation-resources.sh",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
-				"$PODS_CONFIGURATION_BUILD_DIR/MWPhotoBrowser/MWPhotoBrowser.bundle",
+				$PODS_CONFIGURATION_BUILD_DIR/MWPhotoBrowser/MWPhotoBrowser.bundle,
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
@@ -436,24 +363,15 @@
 				46C8A8621FE3DA2000E8E5E4 /* ComicDetalViewController.m in Sources */,
 				46C8A84E1FE2993500E8E5E4 /* ComicCollectionViewCell.m in Sources */,
 				46C8A8581FE2B1CD00E8E5E4 /* Comic.m in Sources */,
-				464F0A201FD806E7005BC01B /* AFNetClient.m in Sources */,
-				461B46811FDAB369006CC139 /* NewsDetailViewController.m in Sources */,
 				464F094C1FC972E6005BC01B /* MyTabBarViewController.m in Sources */,
 				461B46CC1FDD09A0006CC139 /* CategoryCollectionViewCell.m in Sources */,
 				464F094F1FC973C5005BC01B /* MyNavigationViewController.m in Sources */,
-				464F0A251FD961C9005BC01B /* NewsMainViewController.m in Sources */,
 				46C8A86A1FE543AC00E8E5E4 /* ComicSetViewController.m in Sources */,
-				464F09531FC974D1005BC01B /* ContentViewController.m in Sources */,
 				464F09391FC96FAC005BC01B /* ViewController.m in Sources */,
-				464F095F1FC9754E005BC01B /* MeViewController.m in Sources */,
 				461B46BF1FDCC499006CC139 /* ComicMainCollectionViewController.m in Sources */,
 				464F09441FC96FAC005BC01B /* main.m in Sources */,
-				464F095C1FC9752C005BC01B /* TopicViewController.m in Sources */,
 				464F09361FC96FAC005BC01B /* AppDelegate.m in Sources */,
-				464F09591FC97503005BC01B /* LiveViewController.m in Sources */,
 				464F09631FC97DB9005BC01B /* News.m in Sources */,
-				464F09561FC974EA005BC01B /* NewsViewController.m in Sources */,
-				461B46861FDBDCF0006CC139 /* NewsTableViewCell.m in Sources */,
 				461B46C21FDCF491006CC139 /* ComicMainFlowLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
